@@ -20,7 +20,7 @@ message.addEventListener("keypress", () => {
 socket.on("chat", (data) => {
   feedback.innerHTML = "";
   output.innerHTML +=
-    "<p><strong>" + data.handle + ": </strong>" + data.message + "</p>";
+    "<p><strong>" + data.handle + ":</strong><br>" + data.message + "</p>";
 });
 
 socket.on("typing", (data) => {
