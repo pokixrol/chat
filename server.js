@@ -2,6 +2,9 @@ const express = require("express");
 const socket = require("socket.io");
 const path = require("path");
 const http = require("http");
+const timeInfo = require('./modules.js');
+
+console.log(timeInfo());
 
 const app = express();
 const server = http.createServer(app);
