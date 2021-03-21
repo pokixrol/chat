@@ -34,19 +34,28 @@ body{
     color: #008ae6;
 }
 
-label{
-   
-    padding: 10px 20px;
-}
-
 #handle{
-    width: 235%;
+    width: 240%;
+    margin-left: 15px;
 }
 
 #message{
-    width: 235%;
+    width: 240%;
+    margin-left: 15px;
 }
 
-button{
+#send{
     width: 121%;
+}
+
+#login{
+    width: 20%;
+}
+
+#username{
+    width: 80%;
+}
+
+#loginpage{
+   margin-top: 150px;
 }

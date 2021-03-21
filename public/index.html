@@ -16,50 +16,72 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="jumbotron bg-primary my-4">
-      <h1 class="display-3 text-center text-white">Chat</h1>
-      <p class="lead text-center text-white">První pokus</p>
-    </header>
     <main>
-      <div id="chatroom">
-        <div id="chat-window">
-          <div id="output"></div>
-          <div id="feedback"></div>
+      <div id="loginBlock">
+        <div class="jumbotron bg-primary my-4">
+          <h1 class="display-3 text-center text-white">Login</h1>
+          <p class="lead text-center text-white">Zatím nefunguje username</p>
         </div>
         <div class="container">
-          <form>
+          <form id="loginpage">
             <div class="form-group row">
-              <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-              <div class="col-sm-1-12">
-                <input type="text" class="form-control" id="handle" placeholder="Nickname">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-              <div class="col-sm-1-12">
-                <input type="text" class="form-control" id="message" placeholder="Message">
-              </div>
-            </div>
-            <div class="form-group row">
+              <label for="username" class="col-sm-2 col-form-label"></label>
               <div class="col-sm-10">
-                <button id="send" type="button" class="btn btn-primary">Send</button>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-2 col-sm-10">
+                <button type="button" id="login" class="btn btn-primary">Login</button>
               </div>
             </div>
           </form>
         </div>
-        <!--<input id="handle" type="text" placeholder="Nickname" />
-        <input id="message" type="text" placeholder="Message" />
-        <button id="send">Send</button> -->
+      </div>
+
+      <div id="chatBlock" style="display: none;">
+        <div class="jumbotron bg-primary my-4">
+          <h1 class="display-3 text-center text-white">Chat</h1>
+          <p class="lead text-center text-white">První pokus</p>
+        </div> 
+        <div id="chatroom" >
+          <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+          </div>
+          <div class="container">
+            <form>
+              <div class="form-group row">
+                <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                <div class="col-sm-1-12">
+                  <input type="text" class="form-control" id="handle" placeholder="Nickname">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                <div class="col-sm-1-12">
+                  <input type="text" class="form-control" id="message" placeholder="Message">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button id="send" type="button" class="btn btn-primary">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--<input id="handle" type="text" placeholder="Nickname" />
+          <input id="message" type="text" placeholder="Message" />
+          <button id="send">Send</button> -->
+        </div>
+        <div class="py-5 bg-primary">
+            <p class="m-0 text-center text-white">Karolína Říčná, SŠPU Opava, IT2 &copy; 2021</p>
+        </div>
       </div>
     </main>
-    <footer class="py-5 bg-primary">
-      <div class="container">
-        <p class="m-0 text-center text-white">Karolína Říčná, SŠPU Opava, IT2 &copy; 2021</p>
-      </div>
-    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
